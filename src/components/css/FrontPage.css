@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hind+Siliguri:wght@400&display=swap");
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fefcf3;
+}
+
+.papers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
 .welcome {
   text-align: center;
 }
@@ -11,9 +31,34 @@
   height: 20%;
 }
 
-.aboutMe-image {
-  width: 10%;
-  height: 10%;
+.research-papers {
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  text-align: center;
+  background-color: #f5ebe0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.research-text {
+  font-size: 300%;
+  font-family: "Dancing Script", cursive;
+}
+.main-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 320%;
+  margin-bottom: 2%;
+  
+}
+.small-text {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me {
@@ -26,12 +71,39 @@
   text-align: center;
   padding-left: 25%;
   padding-right: 25%;
+  font-size: 105%;
+}
+
+.welcome-text {
+  font-size: 120%;
+}
+
+.aboutMe-image {
+  width: 15%;
+  height: 15%;
+}
+
+.card-img-top {
+  height: 25rem;
+
+  object-fit: fill;
+  object-position: center;
 }
 
 /* Mobile style */
 @media only screen and (max-width: 600px) {
-  .main-image {
+  .aboutMe-image {
     width: 40%;
     height: 40%;
+  }
+
+  .card-img-top {
+    height: 90vw;
+  }
+
+  .about-me-text {
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

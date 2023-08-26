@@ -3,31 +3,33 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "../components/css/NavbarMashi.css";
 
+
+
 function NavbarMashi() {
   return (
     <Navbar
       collapseOnSelect
-      expand="lg"
-      className="bg-body-tertiary "
+      expand="md"
+      style={{ backgroundColor: "red !important"  }}
+      className="custom-navbar bg-body-tertiary header"
+   
       defaultExpanded
     >
-      <Container>
-        <Navbar.Brand className="ms-auto right" href="#home">
-          Phuc Huynh Evertsen
-        </Navbar.Brand>
+      <Container >
+       
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#features" className="ms-auto">
+            <Nav.Link href="about-me" className="ms-auto nav-text">
               About me
             </Nav.Link>
-            <Nav.Link href="#cv" className="ms-auto">
+            <Nav.Link href="#cv" className="ms-auto nav-text">
               CV
             </Nav.Link>
-            <Nav.Link href="#teaching" className="ms-auto">
+            <Nav.Link href="#teaching" className="ms-auto nav-text">
               Teaching
             </Nav.Link>
-            <Nav.Link href="#teaching" className="ms-auto">
+            <Nav.Link href="#teaching" className="ms-auto nav-text">
               Research
             </Nav.Link>
           </Nav>

@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hind+Siliguri:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
-    .right {
-      display: flex important!;
-      justify-content: flex-end important!;
-      color: brown;
-    }
-  
+.header {
+  display: flex important!;
+  justify-content: flex-end important!;
+  color: brown;
+}
+
+.custom-navbar {
+  background-color: #f5ebe0 !important;
+}
+
+.nav-text {
+  font-family: "Dancing Script", cursive !important;
+  font-size: 130% !important;
+  font-weight: 700 !important;
+}
